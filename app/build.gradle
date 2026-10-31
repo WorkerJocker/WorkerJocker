@@ -1,0 +1,32 @@
+plugins {
+id 'com.android.application'
+}
+
+android {
+namespace "worker.jocker"
+compileSdk 35
+
+lint {
+        checkReleaseBuilds false
+    }
+
+defaultConfig {  
+    applicationId "worker.jocker"  
+    minSdk 31
+    targetSdk 37
+    versionCode 1
+    versionName "1.0"  
+}  
+
+buildTypes {  
+    release {  
+        minifyEnabled false  
+        shrinkResources false  
+         }  
+}
+
+}
+
+dependencies {  
+implementation ("io.github.confidenseuide:BackgroundWorkAroundLib:11.0")  
+}
