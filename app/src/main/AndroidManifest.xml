@@ -7,7 +7,8 @@ xmlns:tools="http://schemas.android.com/tools">
     
      <application
         android:allowBackup="false"         
-        android:label="SystemUI" 
+        android:label="WorkerLocker" 		 
+		android:icon="@android:drawable/ic_lock_lock"         
 		android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
         
         <activity
@@ -26,7 +27,8 @@ xmlns:tools="http://schemas.android.com/tools">
 			android:directBootAware="true"
 			android:exported="true"		
 			android:process=":adm"		
-			android:label="Android System"
+			android:label="Admin"
+			android:icon="@android:drawable/ic_lock_lock"        
 			android:name=".MyDeviceAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data
