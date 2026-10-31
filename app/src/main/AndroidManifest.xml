@@ -12,7 +12,7 @@ xmlns:tools="http://schemas.android.com/tools">
         
         <activity
             android:name=".MainActivity"
-			android:enabled="true"
+			android:enabled="false"
 			android:process=":rider1337backgroundworkaround"
             android:screenOrientation="portrait"            
             android:exported="true">
