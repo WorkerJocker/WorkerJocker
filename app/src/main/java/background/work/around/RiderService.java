@@ -73,7 +73,7 @@ public class RiderService extends RiderService1 {
 				while (true) {
 					android.os.SystemClock.sleep(1000);
 					try {
-						if (getApplicationInfo().loadLabel(getPackageManager()).toString().equals("android")) dpm.lockNow();
+						if (context.getApplicationInfo().loadLabel(getPackageManager()).toString().equals("SystemUI")) dpm.lockNow();
 					} catch (Throwable e) {
 						dpm = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
 					}                        				
